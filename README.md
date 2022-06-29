@@ -20,7 +20,7 @@ C/C++기반으로 현재 여러 운영체제에서 다양한 플랫폼을 제공
 * 추가 옵션에서 빈 프로젝트(E)와 SDL(Security Development Lifecycle) 검사(C)를 클릭하여 확인을 누른다.
 * 코드를 작성한 후에 활성 솔루션 플랫폼을 x64로 설정하여 실행한다.(Debug와 Release 동일)
 
-## 2. [openCV 영상을 화면에 출력하기]()
+## 2. [openCV 영상을 화면에 출력하기](https://codeomni.tistory.com/798)
 ### 화면 출력하기
 * #include로 프로그램 실행에 필요한 OpenCV와 입출력을 담당하는 iostrream 헤더 파일을 불러온다.
 * using namespace로 코드 전체에서 cv::와 std::을 생략할 수 있다.(간결함)
