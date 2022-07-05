@@ -35,3 +35,16 @@ C/C++기반으로 현재 여러 운영체제에서 다양한 플랫폼을 제공
 ### Point_ 클래스
 * 2차원 x, y 축의 좌표 개념이다.
 * Point 
+
+### Size_ 클래스
+* 영상에서 크기를 지정하는 클래스이다.
+
+## 4. 카메라 입력 처리하기
+* VideoCapture 클래스 사용 -> VideoCapture 객체 생성
+* VideoCapture::Open() - 멤버 함수로 카메라 장치를 지정해서 연다.(디폴트 0 - 기본 카메라)
+* VideoCapture::isOpened() - 멤버 함수로 상태 확인(fasle - 사용X)
+* Mat 클래스 객체에 저장 후 imshow()함수로 영상 출력한다.
+
+
+
+
