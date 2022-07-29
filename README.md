@@ -45,6 +45,7 @@ C/C++기반으로 현재 여러 운영체제에서 다양한 플랫폼을 제공
 * VideoCapture::isOpened() - 멤버 함수로 상태 확인(fasle - 사용X)
 * Mat 클래스 객체에 저장 후 imshow()함수로 영상 출력한다.
 
-
-
+## 5. 동엉상 입력 처리하기
+* VideoCapture 클래스 사용 -> VideoCapture 객체 생성
+* CAP_PROP_FRAME_WIDTH - 
 
