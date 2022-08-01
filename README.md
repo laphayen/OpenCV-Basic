@@ -43,9 +43,13 @@ C/C++기반으로 현재 여러 운영체제에서 다양한 플랫폼을 제공
 * VideoCapture 클래스 사용 -> VideoCapture 객체 생성
 * VideoCapture::Open() - 멤버 함수로 카메라 장치를 지정해서 연다.(디폴트 0 - 기본 카메라)
 * VideoCapture::isOpened() - 멤버 함수로 상태 확인(fasle - 사용X)
-* Mat 클래스 객체에 저장 후 imshow()함수로 영상 출력한다.
+* Mat 클래스 객체에 저장 후 imshow()함수로 영상을 출력한다.
 
 ## 5. 동엉상 입력 처리하기
 * VideoCapture 클래스 사용 -> VideoCapture 객체 생성
-* CAP_PROP_FRAME_WIDTH - 
+* CAP_PROP_FRAME_COUNT - 영상의 전체 프레임 수
+* CAP_PROP_FRAME_WIDTH - 영상 프레임의 가로 크기
+* CAP_PROP_FRAME_HEIGHT - 영상 프레임의 높이 크기
+* CAP_PROP_FPS - 영상의 초당 프레임 수
+* 카메라 입력 처리와 같게 Mat 클래스 객체에 저장 후 imshow()함수로 영상을 출력한다.
 
