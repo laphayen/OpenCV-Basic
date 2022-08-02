@@ -1,51 +1,34 @@
 
-# 동영상 파일 저장
-# VideoWriter 클래스
-
 #include "opencv2/opecv.hpp"
 #include <iostream>
 
 using namespace cv;
 using namespace std;
 
-void camera_in_video_out()
+void video_in()
 {
-	VideoCapture cap(0);
+	VideoCapture cap("video name.avi");
 
-	if (!cap.isOpened())
-	{
+	if (!cap.isOpened()) {
 		cerr << "failed" << endl;
 		return;
 	}
 
-
-	int w = cvRound(cap.get(CAP_PROP_FRAME_WIDTH));
-	int h = cvRound(cap.get(CAP_PROP_FRAME_HEIGHT));
-
-	int fourcc = VideoWriter::fourcc('D', 'I', 'V', 'X');
-
-	VideoWriter outputBideo("output.avi", fourcc, fps, Size(w,h));
-
-	if (!outputVideo.isOpened())
-	{
-		cout << "failed" << endl;
-		return;
-	}
+	cout << "Frame count" << cvRound(cap.get(CAP_PROP_FRAME_COUNT)) << endl;
+	cout << "Frame width " << cvRound(cap.get(CAP_PROP_FRAME_WIDTH)) << endl;
+	cout << "Frame height " << cvRound(cap.get(CAP_PROP_FRAME_HEIGHT)) << end;
+	cout << "Frame height " << cvRound(cap.get(CAP_PROP_FPS)) << end;
 
 	Mat frame;
-
-	while (true)
-	{
+	while (true) {
 		cap >> frame;
-		if (frame.empth())
+		if (frame.empty())
 			break;
-
-		outputVideo << frame;
 
 		imshow("frame", frame);
 
-		waitKey();
-	}
+ 		waitKey();
+ 	}
  	
  	destroyAllWindows();
 }
