@@ -57,9 +57,9 @@ C/C++기반으로 현재 여러 운영체제에서 다양한 플랫폼을 제공
 ### 4-3. 동영상 출력 처리하기
 * VideoWriter 클래스 사용 -> VideoWriter 객체 생성
 * fourcc - 영상 파일의 저장할 코덱 지정
-** fourcc('D', 'I', 'V', 'X') - DivX MPEG-4 코덱
-** fourcc('X', '2', '6', '4') - H.264/AVC 코덱
-** fourcc('A', 'V', 'C', '1') - Advanced Video 코덱
+  * fourcc('D', 'I', 'V', 'X') - DivX MPEG-4 코덱
+  * fourcc('X', '2', '6', '4') - H.264/AVC 코덱
+  * fourcc('A', 'V', 'C', '1') - Advanced Video 코덱
 * outputVideo() 함수로 저장할 파일의 이름과, 코덱, fps, 크기를 지정한다.
 
 ## 기타1 - 반전 영상
