@@ -39,19 +39,28 @@ C/C++기반으로 현재 여러 운영체제에서 다양한 플랫폼을 제공
 ### Size_ 클래스
 * 영상에서 크기를 지정하는 클래스이다.
 
-## 4. 카메라 입력 처리하기
+## 4. 카메라 처리하기
+### 4-1 카메라 입력 처리
 * VideoCapture 클래스 사용 -> VideoCapture 객체 생성
 * VideoCapture::Open() - 멤버 함수로 카메라 장치를 지정해서 연다.(디폴트 0 - 기본 카메라)
 * VideoCapture::isOpened() - 멤버 함수로 상태 확인(fasle - 사용X)
 * Mat 클래스 객체에 저장 후 imshow()함수로 영상을 출력한다.
 
-## 5. 동영상 입력 처리하기
+### 4-2. 동영상 입력 처리하기
 * VideoCapture 클래스 사용 -> VideoCapture 객체 생성
 * CAP_PROP_FRAME_COUNT - 영상의 전체 프레임 수
 * CAP_PROP_FRAME_WIDTH - 영상 프레임의 가로 크기
 * CAP_PROP_FRAME_HEIGHT - 영상 프레임의 높이 크기
 * CAP_PROP_FPS - 영상의 초당 프레임 수
 * 카메라 입력 처리와 같게 Mat 클래스 객체에 저장 후 imshow()함수로 영상을 출력한다.
+
+### 4-3. 동영상 출력 처리하기
+* VideoWriter 클래스 사용 -> VideoWriter 객체 생성
+* fourcc - 영상 파일의 저장할 코덱 지정
+** fourcc('D', 'I', 'V', 'X') - DivX MPEG-4 코덱
+** fourcc('X', '2', '6', '4') - H.264/AVC 코덱
+** fourcc('A', 'V', 'C', '1') - Advanced Video 코덱
+* outputVideo() 함수로 저장할 파일의 이름과, 코덱, fps, 크기를 지정한다.
 
 ## 기타1 - 반전 영상
 * 반전 변수를 생성 후 ~연산자를 사용한다.
