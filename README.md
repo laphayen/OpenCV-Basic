@@ -5,8 +5,6 @@ C/C++기반으로 현재 여러 운영체제에서 다양한 플랫폼을 제공
 라이브러리는 각각의 모듈로 구성되어 있으며 확장자는 \*.lib, \*.dll 등 을 가진다.
 [공식 문서 사이트](https://docs.opencv.org/)를 참고하면 다양한 정보를 얻을 수 있다.(단, 해당 버전을 참고해야 한다)
 
-( )
-( )
 ## 1. [OpenCV 설치 방법 및 프로젝트 생성](https://codeomni.tistory.com/764)
 ### OpenCV 설치
 * [다운로드](https://opencv.org/releases/) 에서 제공하는 OpenCV를 다운받아서 Visual Studio로 프로젝트를 생성한다.
