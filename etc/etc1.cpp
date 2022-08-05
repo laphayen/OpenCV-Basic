@@ -21,6 +21,7 @@ void video_in()
 		if (frame.empty())
 			break;
 
+		inversed = ~frame;
 		imshow("inversed", inversed);
 
  		waitKey();
