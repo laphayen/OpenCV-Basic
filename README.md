@@ -61,24 +61,48 @@ using namespace std;
 ### 4-1 카메라 입력 처리
 * VideoCapture 클래스 사용 -> VideoCapture 객체 생성
 * VideoCapture::Open() - 멤버 함수로 카메라 장치를 지정해서 연다.(디폴트 0 - 기본 카메라)
+<pre><code>VideoCapture cap(0);
+</code></pre>
 * VideoCapture::isOpened() - 멤버 함수로 상태 확인(fasle - 사용X)
+<pre><code>if (!cap.isOpened()) {
+</code></pre>
 * Mat 클래스 객체에 저장 후 imshow()함수로 영상을 출력한다.
+<pre><code>imshow("frame", frame);
+</code></pre>
 
 ### 4-2. 동영상 입력 처리하기
 * VideoCapture 클래스 사용 -> VideoCapture 객체 생성
+<pre><code>VideoCapture cap("video name.avi");
+</code></pre>
 * CAP_PROP_FRAME_COUNT - 영상의 전체 프레임 수
+<pre><code>cout << "Frame count" << cvRound(cap.get(CAP_PROP_FRAME_COUNT)) << endl;
+</code></pre>
 * CAP_PROP_FRAME_WIDTH - 영상 프레임의 가로 크기
+<pre><code>cout << "Frame width " << cvRound(cap.get(CAP_PROP_FRAME_WIDTH)) << endl;
+</code></pre>
 * CAP_PROP_FRAME_HEIGHT - 영상 프레임의 높이 크기
+<pre><code>cout << "Frame height " << cvRound(cap.get(CAP_PROP_FRAME_HEIGHT)) << end;
+</code></pre>
 * CAP_PROP_FPS - 영상의 초당 프레임 수
+<pre><code>cout << "Frame height " << cvRound(cap.get(CAP_PROP_FPS)) << end;
+</code></pre>
 * 카메라 입력 처리와 같게 Mat 클래스 객체에 저장 후 imshow()함수로 영상을 출력한다.
+<pre><code>imshow("frame", frame);
+</code></pre>
 
 ### 4-3. 동영상 출력 처리하기
 * VideoWriter 클래스 사용 -> VideoWriter 객체 생성
+<pre><code>VideoWriter outputBideo("output.avi", fourcc, fps, Size(w,h));
+</code></pre>
 * fourcc - 영상 파일의 저장할 코덱 지정
+<pre><code>int fourcc = VideoWriter::fourcc('D', 'I', 'V', 'X');
+</code></pre>
   * fourcc('D', 'I', 'V', 'X') - DivX MPEG-4 코덱
   * fourcc('X', '2', '6', '4') - H.264/AVC 코덱
   * fourcc('A', 'V', 'C', '1') - Advanced Video 코덱
 * outputVideo() 함수로 저장할 파일의 이름과, 코덱, fps, 크기를 지정한다.
+<pre><code>outputVideo << frame;
+</code></pre>
 
 ## 5. 이벤트 처리
 ### 5-1. 키보드 이벤트 처리
@@ -90,5 +114,9 @@ using namespace std;
 ## 기타1 - 반전 영상
 * 반전 변수를 생성 후 ~연산자를 사용한다.
 * inversed = ~frame;
+<pre><code>inversed = ~frame;
+</code></pre>
 * imshow("inversed", inversed);
+<pre><code>imshow("inversed", inversed);
+</code></pre>
 
