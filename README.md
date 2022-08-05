@@ -22,13 +22,30 @@ C/C++기반으로 현재 여러 운영체제에서 다양한 플랫폼을 제공
 ## 2. [openCV 영상을 화면에 출력하기](https://codeomni.tistory.com/798)
 ### 화면 출력하기
 * #include로 프로그램 실행에 필요한 OpenCV와 입출력을 담당하는 iostrream 헤더 파일을 불러온다.
+<pre><code>#include "iostream"
+</code></pre>
 * using namespace로 코드 전체에서 cv::와 std::을 생략할 수 있다.(간결함)
-* Mat 클래스로 영상을 담을 변수를 선언.
+<pre><code>using namespace cv;
+using namespace std;
+</code></pre>
+* Mat 클래스로 영상을 담을 변수를 선언한다.
+<pre><code>Mat img;
+</code></pre>
 * imread() 함수로 lenna.png 파일을 불러온다.
+<pre><code>img = imread("lenna.png");
+</code></pre>
 * empty() 함수로 예외처리.
+<pre><code>if (img.empty()) { }
+</code></pre>
 * namedWindow() 함수로 영상을 표시할 창을 생성한 후 이름을 붙인다.
-* imshow() 함수로 생성한 창에 불러온 파일을 출력한다.
-* waitkey() 키 입력 시 영상 종료한다.
+<pre><code>namedWindow("image");
+</code></pre>
+* imshow() 함수로 생성한 창에 불러온 파일을 출력하고, " " 안에 파일의 이름을 지정한다.
+<pre><code>imshow("image", img);
+</code></pre>
+* waitkey() 키보드의 키를 입력 시 영상 종료한다. 
+<pre><code>waitKey();
+</code></pre>
 
 
 ## 3. [기본 클래스]()
@@ -66,8 +83,7 @@ C/C++기반으로 현재 여러 운영체제에서 다양한 플랫폼을 제공
 ## 5. 이벤트 처리
 ### 5-1. 키보드 이벤트 처리
 * waitKey() - OpenCV의 키보드 입력 함수
-<pre><code>
-int waitKey(int delay = 0);
+<pre><code>int waitKey(int delay = 0);
 </code></pre>
 
 
