@@ -109,7 +109,19 @@ using namespace std;
 * waitKey() - OpenCV의 키보드 입력 함수
 <pre><code>int waitKey(int delay = 0);
 </code></pre>
+* delay - 밀리초 동안 대기
+* 지정된 입력 키와 지정된 시간동안 키의 입력이 없을 경우 -1 반환한다.
+* 키의 입력을 지정하는 경우는 아스키 코드표를 참조한다.
 
+### 5-2. 마우스 이벤트 처리
+* setMouseCallbck() 함수 사용한다.
+<pre><code>void setMouseCallback(const String& winname, MouseCallback onMouse, void* userdata = 0;
+</code></pre>
+* MouseCallbak 함수의 구성
+<pre><code>typedef void (*MouseCallback)(int event, int x, int y, int flags, void* userdata);
+</code></pre>
+* MouseEventTypes 열거형 상수 - 마우스 버튼 조작 상태( 어느 버튼이 조작되고 있는지)
+* MouseEventFlags 열거형 상수 - 버튼 눌려있는 상태
 
 ## 기타1 - 반전 영상
 * 반전 변수를 생성 후 ~연산자를 사용한다.
