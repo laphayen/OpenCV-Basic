@@ -123,6 +123,8 @@ using namespace std;
 * MouseEventTypes 열거형 상수 - 마우스 버튼 조작 상태( 어느 버튼이 조작되고 있는지)
 * MouseEventFlags 열거형 상수 - 버튼 눌려있는 상태
 
+### 5-3. 트랙바 이벤트
+
 ## 기타1 - 반전 영상
 * 반전 변수를 생성 후 ~연산자를 사용한다.
 * inversed = ~frame;
