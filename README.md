@@ -51,9 +51,23 @@ using namespace std;
 ## 3. [기본 클래스]()
 ### 3-1. Point_ 클래스
 * 2차원 x, y 축의 좌표 개념이다. 
+* 멤버 변수로 (x, y)를 사용한다.
+* x와 y를 나눠서 지정 가능하다.
+<pre><code>pt1.x = 8; pt1.y = 8;
+</code></pre>
+* (x, y)로 지정
+<pre><code>pt2(6, 17);
+</code></pre>
 
-### Size_ 클래스
+### 3-2. Size_ 클래스
 * 영상에서 크기를 지정하는 클래스이다.
+* 멤버 변수로 width와 height를 사용한다.
+* area() - 영상의 면적
+<pre><code>int area1 = sz1.area();
+</code></pre>
+
+### 3-3. Rect_ 클래스
+* 영상의 2차원 정보를 표시
 
 
 ## 4. 카메라 처리하기
