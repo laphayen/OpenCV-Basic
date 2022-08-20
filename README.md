@@ -62,12 +62,22 @@ using namespace std;
 ### 3-2. Size_ 클래스
 * 영상에서 크기를 지정하는 클래스이다.
 * 멤버 변수로 width와 height를 사용한다.
+<pre><code>sz1.width()
+</code></pre>
+<pre><code>sz1.height()
+</code></pre>
 * area() - 영상의 면적
 <pre><code>int area1 = sz1.area();
 </code></pre>
 
 ### 3-3. Rect_ 클래스
 * 영상의 2차원 정보를 표시
+
+### 3-4. RotatedRect 클래스
+* 영상을 회전하는 클래스이다.
+* size, center, angle을 멤버 변수로 사용한다.
+
+
 
 
 ## 4. 카메라 처리하기
@@ -136,7 +146,7 @@ using namespace std;
 * MouseEventTypes 열거형 상수 - 마우스 버튼 조작 상태( 어느 버튼이 조작되고 있는지)
 * MouseEventFlags 열거형 상수 - 버튼 눌려있는 상태
 
-### 5-3. 트랙바 이벤트
+### 5-3. 트랙바 이벤트 처리
 
 ## 기타1 - 반전 영상
 * 반전 변수를 생성 후 ~연산자를 사용한다.
