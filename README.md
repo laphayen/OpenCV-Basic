@@ -94,6 +94,12 @@ using namespace std;
 ### 3-7. Mat 클래스
 * 이미지와 영상을 행령의 형태로 사용한다.
 
+### 3-8. Range 클래스
+* 범위와 구간 클래스이다.
+* 시작은 start 변수와 끝은 end 멤버변수를 사용한다.
+<pre><code>int_start, int _end
+</pre></code>
+
 
 ## 4. 카메라 처리하기
 ### 4-1 카메라 입력 처리
