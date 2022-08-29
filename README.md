@@ -93,6 +93,15 @@ using namespace std;
 
 ### 3-7. Mat 클래스
 * 이미지와 영상을 행령의 형태로 사용한다.
+* 2차원부터 고차원의 행렬을 표현한다.
+* 1개 이사으이 채널을 가질 수 있다.
+* 행렬의 생성과 초기화 - 행과 열, 타입을 지정한다.
+<pre><code>Mat::Mat(int rows, int cols, int type);
+</code></pre>
+* 행렬의 크기 지정 - OpenCV의 Size와 타입을 지정한다.
+<pre><code>Mat::Mat(Size size, int type);
+</code></pre>
+
 
 ### 3-8. Range 클래스
 * 범위와 구간 클래스이다.
