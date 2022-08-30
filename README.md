@@ -109,6 +109,12 @@ using namespace std;
 <pre><code>int_start, int _end
 </pre></code>
 
+### 3-9. String 클래스
+* 영상 출력에서 문자열 저장하고 출력이 가능합니다.
+<pre><code>String format(const char* fmt, ... );
+</code></pre>
+
+
 
 ## 4. 카메라 처리하기
 ### 4-1 카메라 입력 처리
