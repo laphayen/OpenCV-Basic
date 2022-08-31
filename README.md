@@ -183,6 +183,12 @@ using namespace std;
 * MouseEventFlags 열거형 상수 - 버튼 눌려있는 상태
 
 ### 5-3. 트랙바 이벤트 처리
+* 슬라이더 컨트롤
+* 프로그램 사용자가 원하는 값을 선택한다.
+* createTrackbar() 함수로 트랙바를 생성한다.
+<pre><code>int createTrackbar(const String& trackbarname, const String& winname, int* value, int count, TrackbarCallback onChange = 0, woid* userdata = 0;
+</code></pre>
+* getTrackbarPos() 함수로 현재 트랙바의 위치를 확인한다.
 
 ## 기타1 - 반전 영상
 * 반전 변수를 생성 후 ~연산자를 사용한다.
