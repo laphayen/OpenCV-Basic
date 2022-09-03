@@ -107,7 +107,8 @@ using namespace std;
 * 범위와 구간 클래스이다.
 * 시작은 start 변수와 끝은 end 멤버변수를 사용한다.
 <pre><code>int_start, int _end
-</pre></code>
+</code></pre>
+
 
 ### 3-9. String 클래스
 * 영상 출력에서 문자열 저장하고 출력이 가능합니다.
@@ -189,6 +190,11 @@ using namespace std;
 <pre><code>int createTrackbar(const String& trackbarname, const String& winname, int* value, int count, TrackbarCallback onChange = 0, woid* userdata = 0;
 </code></pre>
 * getTrackbarPos() 함수로 현재 트랙바의 위치를 확인한다.
+<pre><code>int cv::getTrackbarPos(const Strign & trackbarname, const String & winname)
+</code></pre>
+* 리턴으로 트랙바 위치를 반환한다.
+
+
 
 ## 기타1 - 반전 영상
 * 반전 변수를 생성 후 ~연산자를 사용한다.
